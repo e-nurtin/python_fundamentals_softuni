@@ -1,0 +1,5 @@
+numbers = input().split(', ')
+print("Positive:", ", ".join(x for x in numbers if int(x) >= 0))
+print("Negative:", ', '.join(x for x in numbers if int(x) < 0))
+print("Even:", ', '.join(x for x in numbers if abs(int(x)) % 2 == 0))
+print("Odd:", ', '.join(x for x in numbers if abs(int(x)) % 2 != 0))

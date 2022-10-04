@@ -10,6 +10,4 @@ while len(list_of_people) > 0:
             person_to_execute += step
         if person_to_execute >= len(list_of_people):
             person_to_execute = abs(person_to_execute - len(list_of_people))
-print("[", end="")
-print(*execution_order, sep=",", end="")
-print("]")
+print(f"[{','.join(str(x) for x in execution_order)}]")

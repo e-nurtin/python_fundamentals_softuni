@@ -1,8 +1,13 @@
+# factor_number = int(input())
+# count_of_multiplies = int(input())
+# current_number = 0
+# list_of_multiplied_numbers = []
+# for current_factor in range(1, count_of_multiplies + 1):
+#     current_number = current_factor * factor_number
+#     list_of_multiplied_numbers.append(current_number)
+# print(list_of_multiplied_numbers)
+
 factor_number = int(input())
-count_of_multiplies = int(input())
-current_number = 0
-list_of_multiplied_numbers = []
-for current_factor in range(1, count_of_multiplies + 1):
-    current_number = current_factor * factor_number
-    list_of_multiplied_numbers.append(current_number)
-print(list_of_multiplied_numbers)
+count_of_multiples = int(input())
+result = [factor_number * number for number in range(1, count_of_multiples + 1)]
+print(result)

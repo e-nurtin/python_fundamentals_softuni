@@ -7,4 +7,4 @@ greater_than_average.sort(reverse=True)
 if len(greater_than_average) == 0:
     print("No")
 else:
-    print(*greater_than_average[:5], sep=' ')
+    print(*greater_than_average[:5])

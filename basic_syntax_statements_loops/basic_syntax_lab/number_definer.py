@@ -1,14 +1,12 @@
 number = float(input())
 
+if 0.0 < abs(number) < 1.0:
+    print("small", end=' ')
+elif abs(number) > 1_000_000:
+    print("large", end=' ')
 if number == 0:
     print("zero")
-elif 1 > number > -1:
-    print("small", end=" ")
-elif number > 1000000:
-    print("large", end=" ")
-elif number < -1000000:
-    print("large", end=" ")
-if number > 0:
+elif number > 0:
     print("positive")
 elif number < 0:
     print("negative")

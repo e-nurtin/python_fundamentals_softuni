@@ -13,22 +13,24 @@ total_pokemons = 0
 command = int(input())
 while len(pokemons) != 0:
     temporary_pokemon = 0
+
     if command < 0:
         temporary_pokemon = int(pokemons[0])
         pokemons[0] = pokemons[-1]
-        pokemons = correct_values(pokemons, temporary_pokemon)
-        total_pokemons += temporary_pokemon
+
     elif command >= len(pokemons):
         temporary_pokemon = int(pokemons[-1])
         pokemons[-1] = pokemons[0]
-        pokemons = correct_values(pokemons, temporary_pokemon)
-        total_pokemons += temporary_pokemon
+
     else:
         temporary_pokemon = pokemons.pop(command)
-        pokemons = correct_values(pokemons, temporary_pokemon)
-        total_pokemons += temporary_pokemon
-    if len(pokemons) == 0:
-        break
+
+    pokemons = correct_values(pokemons, temporary_pokemon)
+    total_pokemons += temporary_pokemon
+
+    # if len(pokemons) == 0:
+    #     break
+    #
     command = int(input())
 
 print(total_pokemons)

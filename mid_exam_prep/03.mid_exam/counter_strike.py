@@ -14,6 +14,7 @@ while command != "End of battle":
     else:
         no_energy_left = True
         break
+
     command = input()
 
 if no_energy_left:

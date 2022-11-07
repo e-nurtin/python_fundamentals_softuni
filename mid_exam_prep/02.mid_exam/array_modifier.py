@@ -14,7 +14,9 @@ def decrease_value():
 
 initial_list = list(map(int, input().split()))
 command = input()
+
 while command != "end":
+
     action, *info = [int(x) if x.isdigit() else x for x in command.split()]
 
     if action == "swap":
@@ -23,5 +25,7 @@ while command != "end":
         multiply(info[0], info[1])
     elif action == "decrease":
         decrease_value()
+
     command = input()
+
 print(*initial_list, sep=", ")

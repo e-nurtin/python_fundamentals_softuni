@@ -7,8 +7,11 @@
 #     final_numbers.append(result)
 # print(final_numbers)
 
-list_of_numbers = input().split()
-opposite_numbers = []
-for element in list_of_numbers:
-    opposite_numbers.append(-int(element))
-print(opposite_numbers)
+# list_of_numbers = input().split()
+# opposite_numbers = []
+# for element in list_of_numbers:
+#     opposite_numbers.append(-int(element))
+# print(opposite_numbers)
+
+numbers = list(map(int, input().split()))
+print([-number for number in numbers])

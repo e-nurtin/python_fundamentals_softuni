@@ -14,8 +14,6 @@ def combine_items(items):
         index = inventory_items.index(old_item)
         if index < len(inventory_items):
             inventory_items.insert(index + 1, new_item)
-        else:
-            inventory_items.append(new_item)
 
 
 def renew_item(item):

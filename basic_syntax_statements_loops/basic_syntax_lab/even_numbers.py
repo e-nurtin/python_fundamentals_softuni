@@ -1,11 +1,23 @@
-number_count = int(input())
+#
+#
+# count_of_numbers = int(input())
+# numbers_are_even = True
+# for i in range(count_of_numbers):
+#     number = int(input())
+#     if number % 2 != 0:
+#         print(f"{number} is odd!")
+#         numbers_are_even = False
+#         break
+# if numbers_are_even:
+#     print("All numbers are even.")
 
-for number in range(number_count):
-    current_number = int(input())
-    if current_number % 2 == 0:
-        continue
-    else:
-        print(f"{current_number} is odd!")
+
+count_of_numbers = int(input())
+
+for i in range(count_of_numbers):
+    number = int(input())
+    if number % 2 != 0:
+        print(f"{number} is odd!")
         break
-if current_number % 2 == 0:
+else:
     print("All numbers are even.")

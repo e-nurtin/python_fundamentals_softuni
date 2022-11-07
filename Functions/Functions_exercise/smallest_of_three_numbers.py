@@ -8,3 +8,5 @@ number_three = int(input())
 list_of_nums = [number_one, number_two, number_three]
 
 print(smallest_number(list_of_nums))
+
+

@@ -22,10 +22,10 @@ for item in items_and_prices_list:
             current_item_is_sold_for = value_of_current_item * 1.4
             sold_items_prices_list.append(current_item_is_sold_for)
             profit += (value_of_current_item * 0.4)
+
 for number in sold_items_prices_list:
-    print(f"{number:.2f}", end= " ")
+    print(f"{number:.2f}", end=" ")
 print()
-# print(*f"{*sold_items_prices_list:.2f}")
 print(f"Profit: {profit:.2f}")
 if budget_start + profit >= 150.0:
     print("Hello, France!")

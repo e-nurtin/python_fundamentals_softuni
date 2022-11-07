@@ -15,8 +15,7 @@ def add_target(index_to_add, value_to_add):
 def strike(index_strike, radius_of_strike):
     start_index = index_strike - radius_of_strike
     finish_index = index_strike + radius_of_strike + 1
-    if 0 <= start_index < len(targets_to_shoot) and\
-            start_index < finish_index <= len(targets_to_shoot):
+    if 0 <= start_index and finish_index <= len(targets_to_shoot):
         del targets_to_shoot[start_index:finish_index]
     else:
         print("Strike missed!")
@@ -25,8 +24,7 @@ def strike(index_strike, radius_of_strike):
 targets_to_shoot = list(map(int, input().split()))
 command = input()
 while command != "End":
-    action, index, value = [x if x.isalpha() else int(x) for x in
-                            command.split()]
+    action, index, value = [x if x.isalpha() else int(x) for x in command.split()]
 
     if action == "Shoot":
         shoot(index, value)

@@ -2,12 +2,14 @@ import re
 
 message = input()
 
-# pattern = r"[#|]{1}([ a-zA-Z]*)[#|]{1}(\d{2}\/\d{2}\/\d{2})[#|]{1}(\d+)[#|]{1}"
+
 pattern = r"([#|]{1})([ a-zA-Z]+)\1([0-9][0-9]\/[0-9][0-9]\/[0-9][0-9])\1(\d+)\1"
 
 result = re.findall(pattern, message)
 
-food_left_for_days = sum([int(x[3]) for x in result]) // 2000
+# food[3] is the calories of the given food. we sum the total calories and divide them by
+# 2000 to get how many days we would last with the available foods.
+food_left_for_days = sum([int(food[3]) for food in result]) // 2000
 
 print(f"You have food to last you for: {food_left_for_days} days!")
 for item in result:

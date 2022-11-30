@@ -30,5 +30,17 @@ catalogue.add_product("Mirror")
 catalogue.add_product("Desk")
 catalogue.add_product("Chair")
 catalogue.add_product("Carpet")
+
+
+a = Catalogue('Guitarists')
+a.add_product('John Frusciante')
+a.add_product('Jimi Hendrix')
+a.add_product('John Mayer')
+a.add_product('Eric Clapton')
+a.add_product('James Heatherfield')
+a.add_product('Arctic Monkeys')
+
+print(a.get_by_letter('J'))
+print(a)
 print(catalogue.get_by_letter("C"))
 print(catalogue)

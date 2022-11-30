@@ -1,7 +1,7 @@
 class Storage:
     storage = []
 
-    def __init__(self, capacity):
+    def __init__(self, capacity: int):
         self.capacity = capacity
 
     def add_product(self, product):

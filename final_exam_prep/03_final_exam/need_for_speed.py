@@ -52,3 +52,4 @@ while command != "Stop":
 
 for model, info in data.items():
     print(f"{model} -> Mileage: {info[km_d]} kms, Fuel in the tank: {info[fuel_d]} lt.")
+    

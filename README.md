@@ -1,7 +1,6 @@
+## This repo contains my solutions for Softuni's Python Fundamentals software education course.
+Whilst studying Python Fundamentals course I learned all the basics of the language, working with different data types, HTML and CSS. Learned parsing data with regex, stringmatching and text processing. Learned functional programming while working on some own practical projects, some of which you can check on my other repos.
 
------------------------
-# This repo contains my solutions for Softuni's Python Fundamentals software education course.
-### Whilst studying Python Fundamentals course I learned all the basics of the language, working with different data types, HTML and CSS. Learned parsing data with regex, stringmatching and text processing. Learned functional programming while working on some own practical projects, some of which you can check on my other repos.
 -----------------------
 ### Finished Python OOP [Click!](https://softuni.bg/certificates/details/168059/5855d4f1 "Certificate") [Repo](https://github.com/e-nurtin/python_advanced_softuni/tree/main/python_oop)
 
